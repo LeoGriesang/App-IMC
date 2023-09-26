@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Calculadora IMC</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+        <title>Calculadora IMC</title>
+    </head>
+    <body>
+        <div class="card">
+            <div class="front">
+                <h1>Calcule seu <span class="detalhe">IMC</span>.</h1>
+                <h3>Indicie de massa corporal.</h3>
+                <div class="form">
+                    <label for="idade">Idade:</label>
+                    <input type="text" id="idade" placeholder="anos">
+                    <label for="altura">Altura:</label>
+                    <input type="text" id="altura" placeholder="metros">
+                    <label for="peso">Peso:</label>
+                    <input type="text" id="peso" placeholder="Kg">
+                    <div class="botoes">
+                        <button class="btn-limpar">Limpar</button>
+                        <button class="btn-calcular">Calcular</button>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <div class="back-conteudo">
+                    <h1>Seu IMC ficou em <span class="valorJS">22,22</span></h1>
+                    <h3>IMC - CLASSIFICAÇÃO:</h3>
+                    <ul>
+                        <li>Menor que 18.5 - Abaixo do peso ;</li>
+                        <li>Entre 18.5 e 24.9 - Peso normal ;</li>
+                        <li>Entre 25.0 e 29.9 - Pré-obesidade ;</li>
+                        <li>Entre 30.0 e 34.9 - Obesidade Grau 1 ;</li>
+                        <li>Entre 35.0 e 39.9 - Obesidade Grau 2 ;</li>
+                        <li>Acima de 40 - Obesidade Grau 3</li>
+                    </ul>
+                    <p>
+                        fonte: OMS ( Organização Mundial da Saúde ).
+                        Última consulta em 02-01-2023.
+                    </p>
+                    <button class="btn-repetir">Repetir teste</button>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
 </html>

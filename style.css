@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input, label {
+    display: block;
+    width: 100%;
+}
+label {
+    color: #ffffff;
+    font: 400 .9rem/1.3 "Popins", Sans-serif;
+    padding-bottom: 2px;
+}
+input {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.front h1 {
+    margin-left: 20px;
+    margin-top: 40px;
+    font: 400 1.6rem/1.3 "Poppins", Sans-serif;
+    color: #ffffff;
+}
+.detalhe {
+    color: #6FCF97;
+}
+.front h3 {
+    font: 400 .9rem/1.3 "Roboto", Sans-serif;
+    color: #ffffff;
+    margin-left: 62px;
+}
+.form {
+    width: 300px;
+    position: relative;
+    left: 60px;
+    margin-top: 40px;
+}
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+.botoes button{
+    border: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: #ffffff;
+}
+.btn-calcular {
+    background: #556FF7;
+}
+.btn-calcular:hover {
+    background: #3F5AE3;
+}
+.btn-limpar {
+    background: #0A0D14;
+}
+.btn-limpar:hover {
+    background: #151B28;
+}
+
+/*estilo back*/
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back-conteudo {
+    width: 380px;
+    height: 510px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.back-conteudo h1 {
+    margin-top: 10px;
+    font: 400 1.6rem/1.3 "Poppins", Sans-serif;
+}
+.back-conteudo h3 {
+    font: 600 1rem/1.3 "Roboto", Sans-serif;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+.back-conteudo li {
+    font: 400 1rem/1.3 "Roboto", Sans-serif;
+    display: flex;
+    align-items: center;
+}
+.back-conteudo li::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #3F5AE3;
+    margin-right: 10px;
+}
+.back-conteudo p {
+    font: 400 .9rem/1.3 "Poppins", Sans-serif;
+    margin-top: 40px;
+    margin-top: 60px;
+}
+.btn-repetir {
+    font: 400 .8rem/1.3 "Poppins", Sans-serif;
+    background: #556FF7;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-top: 40px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.btn-repetir:hover {
+    background: #3F5AE3;
+}
+
+.valorJS {
+    color: #6FCF97;
+}
+
+
+
+.card {
+    width: 420px;
+    height: 550px;
+    position: relative;
+    perspective: 1000px;
+}
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all 1s;
+    border-radius: 10px;
+}
+.front {
+    background: #28364E;
+}
+.back {
+    background: #28364E;
+    transform: rotateY(-180deg);
+}
+.card.ativo .front {
+    transform: rotateY(180deg);
+}
+.card.ativo .back {
+    transform: rotateY(0);
+}
