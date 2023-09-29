@@ -190,3 +190,14 @@ span {
 .card.ativo .back {
     transform: rotateY(0);
 }
+@media (max-width: 500px) {
+    .card {
+        width: 380px;
+    }
+    .form {
+        left: 40px;
+    }
+    .back-conteudo {
+        width: 340px;
+    }
+}
