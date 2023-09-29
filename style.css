@@ -94,6 +94,10 @@ input {
     margin-top: 10px;
     font: 400 1.6rem/1.3 "Poppins", Sans-serif;
 }
+.back-conteudo h2 {
+    margin-top: 3px;
+    font: 400 1.6rem/1.3 "Poppins", Sans-serif;
+}
 .back-conteudo h3 {
     font: 600 1rem/1.3 "Roboto", Sans-serif;
     margin-top: 40px;
@@ -103,6 +107,7 @@ input {
     font: 400 1rem/1.3 "Roboto", Sans-serif;
     display: flex;
     align-items: center;
+    padding-bottom: 5px;
 }
 .back-conteudo li::before {
     content: "";
@@ -135,7 +140,27 @@ input {
 .valorJS {
     color: #6FCF97;
 }
-
+.pesoA {
+    color: #62D7D0;
+}
+.pesoB {
+    color: #6FCF97;
+}
+.pesoC {
+    color: #F8C648;
+}
+.pesoD {
+    color: #F89C48;
+}
+.pesoE {
+    color: #F87D48;
+}
+.pesoF {
+    color: #F85348;
+}
+span {
+    padding: 0px 5px 0px 5px;
+}
 
 
 .card {
